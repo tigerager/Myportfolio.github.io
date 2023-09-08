@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coursera html,css, javascript</title>
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header id="home">
+		<nav>
+			<div class="name">
+				<span>Afif Rahmat Nusada</span><br/>
+				<div class="email">
+				<img src="mail.png" />
+				<span>afifnusada@gmail.com</span><br/>
+				</div>
+				<img src="phone.png" />
+				<span>+6281276452811</span>
+			</div>
+			<input type="checkbox" id="check" />
+				<label for="check">
+					<img class="menuBtn" src="menu.png" />
+				</label>
+			<div class="navbar">
+				<a href="#about">About Me</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#recommendations">Recommendations</a>
+			<div>
+		</nav>
+	</header>
+	<main class="about" id="about">
+		<img class="profil" src="profile.jpeg">
+		<span class="intro">
+		<h1>Hi, My name is Afif Rahmat Nusada</h1>
+		<p>I am a fresh graduate from Informatic Engineering/Computer Science major in Politeknik Caltex Riau. I got a Bachelor Of Applied Science by completing the study thas was given by the lectures. I want to get a nice job with appropriate salary. But to get a nice job, I need to get more certificate because in this era, the requirement of the job has been increased. To fullfill the the requirement, I join this program to get a valid certificate from IBM. Because everyone knows that IBM is a Giant Company.</p>
+	</main>
+	<main class="skills" id="skills">
+		<div class="skillWrapper">
+			<div class="firstLine">
+				<div class="html">
+					<img class="img1" src="html.png" />
+					<br/>
+					<br/>
+					<span>HTML</span>
+					<br/>
+					<h4>4 Years Experience</h4>
+				</div>
+				<div class="javascript">
+					<img class="img2" src="js.png" />
+					<br/>
+					<br/>
+					<span>Javascript</span>
+					<br/>
+					<h4>2 Years Experience</h4>
+				</div>
+				<div class="Reactjs">
+					<img class="img3" src="reactjs.png" />
+					<br/>
+					<br/>
+					<span>Reactjs</span>
+					<br/>
+					<h4>5 Months Experience</h4>
+				</div>
+				<div class="C#">
+					<img class="img4" src="c.png" />
+					<br/>
+					<br/>
+					<span>C#</span>
+					<br/>
+					<h4>2 Years Experience</h4>
+				</div>
+				<div class="java">
+					<img class="img5" src="java.png" />
+					<br/>
+					<br/>
+					<span>Java</span>
+					<br/>
+					<h4>3 Years Experience</h4>
+				</div>
+			</div>
+			<div class="secondLine">
+				<div class="php">
+					<img class="img6" src="php.png" />
+					<br/>
+					<br/>
+					<span>PHP</span>
+					<br/>
+					<h4>4 Years Experience</h4>
+				</div>
+				<div class="laravel">
+					<img class="img7" src="laravel.png" />
+					<br/>
+					<br/>
+					<span>Laravel</span>
+					<br/>
+					<h4>2 Years Experience</h4>
+				</div>
+				<div class="css">
+					<img class="img7" src="css.png" />
+					<br/>
+					<br/>
+					<span>CSS</span>
+					<br/>
+					<h4>3 Years Experience</h4>
+				</div>
+			</div>
+		</div>
+	</main>
+	<main class="projects" id="projects">
+		<div class="projectContainer">
+			<h1>Projects</h1>
+			<ul>
+				<h2>Shooter Game</h2>
+				<li class="details"><span>Created a shooter game using Unity application and C# programming language.</span></li>
+				<hr/>
+			</ul>
+			<ul>
+				<h2>Fruits Store Online</h2>
+				<li class="details"><span>Created an online shop that sells fruits from my village using html, css, and javascript.</span>
+				</li>
+				<hr/>
+			</ul>
+			<ul>
+				<h2>Car Selling</h2>
+				<li class="details"><span>Created a website for the car dealer to sell their cars.</span></li>
+				<hr/>
+			</ul>
+		</div>
+	</main>
+	<main class="recommendations" id="recommendations">
+		<h1 style="margin-bottom: 1%;">Recommendations</h1>
+		<div class="recomWrapper" id="recomWr">
+			<div class="records">
+				<span><q>Afif is a hardworker man that will complete any task. Afif is Also a quick learner that could get the point about how to develop a website.</q></span>
+			</div>
+			<div class="records">
+				<span><q>I had worked along with Afif for months. Working with Afif is really enjoyable because He would help if we do not understand about something</q></span>
+			</div>
+			<div class="records">
+				<span><q>Afif is a hardworker man that will complete any task. Afif is Also a quick learner that could get the point about how to develop a website.</q></span>
+			</div>
+		</div>
+	</main>
+	<main id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </main>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="arrow.png" style="width: 105%; height: 105%;" />
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img style="width: 7%; height: 7%" src="cek.png"/>
+      <h3>Thank you for submitting a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+</body>
+</html>
