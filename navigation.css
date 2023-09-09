@@ -5,6 +5,7 @@ nav{
 	display: flex;
 	background-color: greenyellow;
 	font-family: cursive;
+	-webkit-font-family: cursive;
 }
 
 .name {
@@ -27,6 +28,7 @@ nav{
 	font-weight: bold;
 	font-size: 25px;
 	font-style: normal;
+	-webkit-font-style: normal;
 }
 
 .navbar {
