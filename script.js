@@ -24,3 +24,8 @@ function showPopup(bool) {
     document.getElementById('popup').style.visibility = 'hidden'
   }
 }
+
+function unCheck(){
+  let input = document.getElementById("check");
+  input.click();
+}
